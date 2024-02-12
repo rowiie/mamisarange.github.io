@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COS Course Lists</title>
+    <link rel="icon" type="image/png" href="CO_Science2.gif" />
+
+    <style>
+      body,
+      html {
+        color: #ececec;
+        height: 218vh;
+        margin: 0;
+        background-image: linear-gradient(
+          to right,
+          rgb(156, 154, 154),
+          rgb(238, 236, 236)
+        );
+        min-height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        width: 100%;
+        z-index: -1;
+      }
+
+      /* .bg1 {
+        background-image: linear-gradient(45deg, rgb(82, 82, 82), rgb(149, 146, 146));
+        min-height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100% 102%;
+        position: fixed;
+        width: 103%;
+      } */
+
+      /* ====== */
+
+      .img-side-bg {
+        position: fixed;
+        height: 110vh;
+        width: 30%;
+        z-index: 1;
+        left: 67%;
+        top: 0%;
+      }
+
+      .cropped {
+        width: 500px;
+        object-fit: cover;
+        object-position: 25% 25%;
+      }
+
+      /* =============== */
+
+      .img1 {
+        position: absolute;
+        width: 100px;
+        height: 150px;
+        align-items: center;
+        left: 50px;
+        justify-content: center;
+        z-index: -1;
+      }
+
+      .img2 {
+        position: fixed;
+        width: 200px;
+        height: 200px;
+        z-index: 3;
+        border-style: solid;
+        border-width: 5px;
+        border-color: #374254;
+      }
+
+      .flexcol {
+        position: fixed;
+        left: 76.8%;
+        padding-top: 5%;
+        z-index: 2;
+      }
+
+      /* ============ */
+      footer {
+        position: fixed;
+        bottom: 0;
+        right: 4%;
+        font-size: 30px;
+        padding: 5px;
+        border-style: solid;
+        background-color: #374254;
+        opacity: 90%;
+        z-index: 2;
+      }
+
+      .afooter {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px black;
+      }
+
+      /* .footerCOScourseprog {
+        position: fixed;
+        bottom: 17%;
+        right: 64%;
+        font-size: 30px;
+        padding: 5px;
+        border-style: solid;
+        background-color: #374254;
+        opacity: 90%;
+      } */
+
+      /* ============== */
+
+      /* details[open] summary ~ * {
+        animation: open 0.5s ease-in-out;
+      }
+
+      @keyframes open {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      details summary::-webkit-details-marker {
+        display: none;
+      }
+
+      details summary {
+        width: 100%;
+        padding: 0.5rem 0;
+        border-top: 3px solid #ececec;
+        position: relative;
+        cursor: pointer;
+        font-size: 1.2em;
+        font-weight: 300;
+        list-style: none;
+      }
+
+      details summary:after {
+        content: "+";
+        color: #ececec;
+        position: absolute;
+        font-size: 1.75rem;
+        line-height: 0;
+        margin-top: 0.75rem;
+        right: 0;
+        font-weight: 200;
+        transform-origin: center;
+        transition: 200ms linear;
+      }
+
+      details[open] summary:after {
+        transform: rotate(45deg);
+        font-size: 2rem;
+      }
+
+      details summary {
+        outline: 0;
+      }
+
+      details p {
+        font-size: 20px;
+        margin: 0 0 1rem;
+        padding-top: 1rem;
+      } */
+
+      p {
+        font-size: 30px;
+      }
+
+      section {
+        padding-top: 4rem;
+        width: 80%;
+        margin-left: 10%;
+        color: #ececec;
+      }
+
+      .divprog {
+        position: relative;
+        margin-top: -8%;
+        left: 6.5%;
+        /* background-image: linear-gradient(
+          45deg,
+          rgb(53, 53, 53),
+          rgb(97, 97, 97)
+        ); */
+        width: 51.1%;
+        height: 300px;
+      }
+
+      .prog-bg-color {
+        background-image: linear-gradient(
+          to right,
+          rgb(72, 72, 72),
+          rgb(108, 107, 107)
+        );
+
+        width: 57%;
+        height: 80%;
+        margin-left: 3%;
+        margin-top: 5%;
+        border-radius: 20px;
+        padding: 8px;
+      }
+
+      h2 {
+        margin-left: 10%;
+      }
+
+      p {
+        margin-left: 17%;
+        font-size: 20px;
+        margin-right: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="img-side-bg cropped" src="COScourse-side-bg.jpg" />
+    
+    <div class="flexcol">
+      <img class="img2" src="CO_Science2.gif" />
+    </div>
+    
+
+    <div class="prog-bg-color">
+      <h1 style="font-size: 50px; margin-left: 5%">Goal:</h1>
+      <pre style="font-size: 26px; margin-left: 2%">
+          The College of Science aims to develop the 
+      students full potential and capabilities into becoming
+      productive, responsive, and innovative individuals</pre
+      >
+      <h1 style="font-size: 50px; margin-left: 5%">Program Offerings</h1>
+
+      <!-- <div class="divprog">
+        <section>
+          <details>
+            <summary>Bachelor of Science in Biology</summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              saepe quas, voluptas minus magnam deserunt aspernatur laudantium.
+              Tempora nisi velit, veritatis beatae eveniet iste possimus,
+              suscipit rem eligendi, maiores voluptas?
+            </p>
+          </details>
+          <details>
+            <summary>Bachelor of Science in Human Services</summary>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+              voluptatibus, magni sint et minus fugiat vitae mollitia sit nisi
+              dolores fuga illo neque quis eligendi perferendis voluptate eos,
+              itaque ipsam?
+            </p>
+          </details>
+          <details>
+            <summary>Bachelor of Science in Psychology</summary>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+              voluptatibus, magni sint et minus fugiat vitae mollitia sit nisi
+              dolores fuga illo neque quis eligendi perferendis voluptate eos,
+              itaque ipsam?
+            </p>
+          </details>
+          <details>
+            <summary>Bachelor of Science in Mathematics</summary>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+              voluptatibus, magni sint et minus fugiat vitae mollitia sit nisi
+              dolores fuga illo neque quis eligendi perferendis voluptate eos,
+              itaque ipsam?
+            </p>
+          </details>
+          <details>
+            <summary>Bachelor of Science in Human Services</summary>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+              voluptatibus, magni sint et minus fugiat vitae mollitia sit nisi
+              dolores fuga illo neque quis eligendi perferendis voluptate eos,
+              itaque ipsam?
+            </p>
+          </details>
+        </section>
+      </div> -->
+      <h2>Bachelor of Science in Biology</h2>
+      <p>
+        A Bachelor of Science in Biology is an undergraduate degree program that
+        focuses on the study of living organisms and their interactions with
+        their environment. Students take lecture-based courses, laboratory
+        experiments, and field studies to gain a deep understanding of life
+        sciences.
+      </p>
+      <h2>Bachelor of Science in Human Services</h2>
+      <p>
+        Students who complete a Bachelor of Human Services program will have the
+        knowledge and abilities necessary to work in a variety of positions that
+        entail assisting people and communities in need. It incorporates
+        curriculum in psychology, sociology, public health, counseling, social
+        work, and counseling. Graduates can work in social services, nonprofits,
+        community development, public health, and government organizations,
+        among other fields.
+      </p>
+      <h2>Bachelor of Science in Psychology</h2>
+      <p>
+        A Bachelor of Science in Psychology program's curriculum often includes
+        courses in cognitive psychology, social psychology, developmental
+        psychology, abnormal psychology, research methodologies, and statistics.
+        Through lab work, research projects, and internships, students may also
+        have the chance to gain practical experience.
+      </p>
+
+      <h2>Bachelor of Science in Mathematics</h2>
+      <p>
+        The Bachelor of Science in Mathematics is an undergraduate degree that
+        enables students to gain a thorough understanding of mathematical
+        theory, computational methods, and problem-solving abilities. Along with
+        learning about topics like probability theory, calculus, linear algebra,
+        discrete mathematics, and statistics in class, students also get
+        hands-on training in computer programming, mathematical modeling, and
+        numerical analysis.
+      </p>
+      <h2>Bachelor of Science in Human Services</h2>
+      <p>
+        A bachelor's degree program in computer science focuses on the
+        investigation of computers, computing systems, and computational
+        procedures. Computer programming, algorithms, data structures, computer
+        organization and architecture, software engineering, database systems,
+        operating systems, computer networks, and artificial intelligence are
+        all covered in this program's courses. Through projects, internships,
+        and laboratory work, program participants also acquire practical
+        experience.
+      </p>
+    </div>
+
+    
+    <footer>
+      <a class="afooter" href="main1.html">Main Page</a>
+      <a class="afooter" href="CollegeCOS.html">Back</a>
+      <a class="afooter" href="aboutus.html">About Us</a>
+      <a class="afooter" href="Contact_Us.html">Contact Us</a>
+    </footer>
+
+    <!-- <footer class="footerCOScourseprog">
+      <a class="afooter" href="COSprogdes.html">Program description</a>
+    </footer> -->
+  </body>
+</html>

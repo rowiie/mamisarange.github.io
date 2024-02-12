@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>COS News and Events</title>
+    <link rel="icon" type="image/png" href="CO_Science2.gif" />
+
+    <style>
+      body {
+        /* background-image: linear-gradient(to right, #374254, #adbbc6, #374254); */
+        background: rgb(90, 89, 90);
+        background: linear-gradient(
+          37deg,
+          rgba(90, 89, 90, 0.10145308123249297) 0%,
+          rgba(104, 104, 105, 0.23870798319327735) 28%,
+          rgba(110, 110, 111, 0.7625175070028012) 62%,
+          rgba(116, 117, 118, 1) 100%
+        );
+        background-repeat: no-repeat;
+        height: 620vh;
+        background-attachment: fixed;
+        margin: 0;
+        z-index: 1;
+      }
+
+      header {
+        background-color: #0e1424;
+        color: #ececec;
+        padding: 40px;
+        font-size: xx-large;
+        text-align: center;
+      }
+
+      .deanCOE {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 60px 20px 40px 60px;
+        border-style: solid;
+        background-color: #ececec;
+        padding: 20px;
+      }
+
+      .flexrow {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .flexcol {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .p1 {
+        margin: 13% 10% 3% 5%;
+      }
+      .p2 {
+        margin: 0% 10% 10% 5%;
+      }
+
+      .p1,
+      .p2 {
+        font-size: 30px;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        right: 4%;
+        font-size: 30px;
+        padding: 10px;
+        padding: 0 10px;
+        z-index: 2;
+        border-style: solid;
+        background-color: #374254;
+        opacity: 90%;
+      }
+
+      .afooter {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #374254;
+      }
+
+      /* ======== */
+      .news1 {
+        z-index: 2;
+        position: absolute;
+        top: 20vh;
+        left: 5vh;
+
+        line-height: 30px;
+
+        color: #042698;
+        font-size: 20px;
+
+        width: 800px;
+        height: 500px;
+
+        background-color: #fdfee9;
+        text-align: justify;
+        font-size: 18px;
+
+        padding: 20px 30px 20px 30px;
+      }
+
+      /* image */
+
+      .image-container {
+        z-index: 2;
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+        top: 160px;
+        left: 950px;
+      }
+
+      .image-container img {
+        max-width: 600px;
+        min-height: 500px;
+        transition: all 0.7s ease;
+      }
+
+      .image-container:hover img {
+        transform: scale(1.2);
+      }
+
+      .image-container:hover .overlay {
+        opacity: 2;
+      }
+
+      /* ==== */
+
+      .image-containerdiv1 {
+        z-index: 2;
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+        top: 750px;
+        left: 30px;
+      }
+
+      .image-containerdiv1 img {
+        max-width: 300px;
+        min-height: 250px;
+        transition: all 0.7s ease;
+      }
+
+      .image-containerdiv1:hover img {
+        transform: scale(1.2);
+      }
+
+      .image-containerdiv1:hover .overlay {
+        opacity: 1;
+      }
+
+      /* newsCOS 5678===== */
+      .image-containerdiv2 {
+        z-index: 2;
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        top: 1050px;
+        left: 170px;
+      }
+
+      .image-containerdiv2 img {
+        max-width: 600px;
+        min-height: 500px;
+        transition: all 0.7s ease;
+      }
+
+      .image-containerdiv2:hover img {
+        transform: scale(1.1);
+      }
+
+      .image-containerdiv2:hover .overlay {
+        opacity: 1;
+      }
+
+      .video1 {
+        position: absolute;
+        top: 95vh;
+        left: 80%;
+      }
+
+      /* ======== */
+      .news2 {
+        z-index: 2;
+        position: absolute;
+        top: 313vh;
+        left: 5vh;
+
+        line-height: 30px;
+
+        color: #042698;
+        font-size: 20px;
+
+        width: 800px;
+        height: 500px;
+
+        background-color: #fdfee9;
+        text-align: justify;
+        font-size: 18px;
+
+        padding: 20px 30px 20px 30px;
+      }
+
+      /* image */
+
+      .image-container2 {
+        z-index: 2;
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+        top: 315vh;
+        left: 1000px;
+      }
+
+      .image-container2 img {
+        max-width: 500px;
+        min-height: 500px;
+        transition: all 0.7s ease;
+      }
+
+      .image-container2:hover img {
+        transform: scale(1.2);
+      }
+
+      .image-container2:hover .overlay {
+        opacity: 2;
+      }
+
+      /* newsCOS Ginoo===== */
+      .image-containerdiv3 {
+        z-index: 2;
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        top: 400vh;
+        left: 100px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .image-containerdiv3 img {
+        max-width: 320px;
+        max-height: 320px;
+        transition: all 0.7s ease;
+      }
+
+      .image-containerdiv3:hover img {
+        transform: scale(1.1);
+      }
+
+      .image-containerdiv3:hover .overlay {
+        opacity: 1;
+      }
+
+      .video2 {
+        position: absolute;
+        top: 400vh;
+        left: 59%;
+      }
+
+      .video3 {
+        position: absolute;
+        top: 400vh;
+        left: 79%;
+      }
+
+      /* ======== */
+      .news3 {
+        z-index: 2;
+        position: absolute;
+        top: 460vh;
+        left: 5vh;
+
+        line-height: 30px;
+
+        color: #042698;
+        font-size: 20px;
+
+        width: 800px;
+        height: 500px;
+
+        background-color: #fdfee9;
+        text-align: justify;
+        font-size: 18px;
+
+        padding: 20px 30px 20px 30px;
+      }
+
+      /* image */
+
+      .image-container3 {
+        z-index: 2;
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+        top: 463vh;
+        left: 1000px;
+      }
+
+      .image-container3 img {
+        max-width: 500px;
+        max-height: 500px;
+        transition: all 0.7s ease;
+      }
+
+      .image-container3:hover img {
+        transform: scale(1.2);
+      }
+
+      .image-container3:hover .overlay {
+        opacity: 2;
+      }
+
+      /* image */
+
+      .image-container4 {
+        z-index: 2;
+        position: absolute;
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 20px;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+        top: 540vh;
+        left: 280px;
+      }
+
+      .image-container4 img {
+        max-width: 500px;
+        max-height: 500px;
+        transition: all 0.7s ease;
+      }
+
+      .image-container4:hover img {
+        transform: scale(1.2);
+      }
+
+      .image-container4:hover .overlay {
+        opacity: 2;
+      }
+
+      .video4 {
+        position: absolute;
+        top: 550vh;
+        left: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>College of Science News and Events</header>
+
+    <div class="news1">
+      <h4>February 20, 2023 - February 23, 2023</h4>
+      <h1 style="font-size: 27px">
+        College of Science Week was held in URSM Quadrangle
+      </h1>
+      <p>
+        The COS week, or college of science week, took place from February
+        20–23, 2023, when students in the department of science had no classes
+        for a week. But there was an event where students could enjoy it. At the
+        opening of the event, the students held a meeting in the URSM quadrangle
+        and waited for the others to start the parade of COS Week as the event
+        opened. Students in the college of science can play and join a variety
+        of sports games and contests, such as the 'Ginoo at Binibining Agham"
+        (GBA), Bench Yell, and eSports, which are the battles of different
+        courses in the college of science. There are also some booths for food,
+        picture taking in the photo booth, and other things you can buy, such as
+        accessories provided by the students in the college of science.
+      </p>
+    </div>
+
+    <!-- =============================== -->
+    <div class="image-container">
+      <img src="news1COSweek.jpg" />
+    </div>
+
+    <div class="image-containerdiv1">
+      <img src="newsCOSW1.jpg" />
+      <img src="newsCOSW2.jpg" />
+      <img src="newsCOSW3.jpg" />
+      <img src="newsCOSW4.jpg" />
+    </div>
+
+    <div class="image-containerdiv2">
+      <img style="padding-right: 53px" src="newsCOSW5.jpg" />
+      <img src="newsCOSW6.jpg" />
+      <img style="padding-right: 53px; padding-top: 53px" src="newsCOSW7.jpg" />
+      <img style="" src="newsCOSW8.jpg" />
+    </div>
+    <!-- =============================== -->
+
+    <video class="video1" width="300" height="300" controls>
+      <source src="video1.mp4" type="video/mp4" />
+    </video>
+
+    <div class="news2">
+      <h4>February 23, 2023</h4>
+      <h1 style="font-size: 27px">
+        Ginoo at Binibining Agham was held in EARTS
+      </h1>
+      <p>
+        On February 23, 2023, the GBA will host "Ginoo at Binibining Agham," the
+        prestigious pageant in COS week for the department of science. Where is
+        the one who claimed the throne as Ginoo at Binibining Agham? Ladies and
+        gentlemen, this year's Ginoo at Binibining Agham has finally found the
+        diamonds of the season! And they're none other than, Mr. Ferdinando
+        Rafanan of BS Mathematics, and Ms. Geralyn Mae Lastica of BS Computer
+        Science. 1st Runners Up: Mr. Kian Louis Garcia and Ms Nicole Tañega 2nd
+        Runners Up: Mr. Angelico Quitalig and Ms. Catherine Sanchez <br /><br />
+        (Source: URSM Ginoo at binibining agham)
+      </p>
+    </div>
+
+    <!-- =============================== -->
+    <div class="image-container2">
+      <img src="EARTS.jpg" />
+    </div>
+
+    <div class="image-containerdiv3">
+      <img src="news2_1.jpg" />
+      <img src="news2_2.jpg" />
+      <img src="news2_3.jpg" />
+    </div>
+
+    <video class="video2" width="300" height="300" controls>
+      <source src="video2ginoo.mp4" type="video/mp4" />
+    </video>
+
+    <video class="video3" width="300" height="300" controls>
+      <source src="video3ginoo.mp4" type="video/mp4" />
+    </video>
+
+    <!-- =============================== -->
+
+    <div class="news3">
+      <h4>May 5, 2023</h4>
+      <h1 style="font-size: 27px">
+        Lathala was handled by Mr. Rico Almer Flores The adviser of essence
+      </h1>
+      <p>
+        The essence recently happened at the school theater, " The Earts, which
+        was handled by Mr. Rico Almer Flores The adviser of essence, College of
+        Science The "essence" is the one that is used under the College of
+        Science for their publication. On May 5, 2023, the students have an
+        event in Essence that tackles the effectiveness of speaking and a
+        variety of things that will help and further improve students in terms
+        of writing, communicating, values, and attitudes. There are also some
+        performances from BSCS first-year students and in other departments of
+        the college of science. And random play games and have some prizes, and
+        a singer in another college of science who has a golden voice, as well
+        as the awarding of students and recognition of who is behind the essence
+        event's success on May 5, 2023.
+      </p>
+    </div>
+
+    <!-- =============================== -->
+    <div class="image-container3">
+      <img src="news3.jpg" />
+    </div>
+
+    <div class="image-container4">
+      <img src="news3_1.jpg" />
+    </div>
+
+    <video class="video4" width="400" height="400" controls>
+      <source src="video4 lathala.mp4" type="video/mp4" />
+    </video>
+
+    <!-- =============================== -->
+
+    <footer>
+      <a class="afooter" href="main1.html">Main Page</a>
+      <a class="afooter" href="CollegeCOS.html">Back</a>
+      <a class="afooter" href="aboutus.html">About Us</a>
+      <a class="afooter" href="Contact_Us.html">Contact Us</a>
+    </footer>
+  </body>
+</html>

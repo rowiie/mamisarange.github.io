@@ -1,0 +1,137 @@
+*, *::before *::after {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.divflexrow {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.divflexcol {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: fantasy;
+    /* background-image: url(mainB1.jpg); */
+    background-size: cover;
+}
+
+.underline-hover-effect {
+    display: inline-block;
+    padding-bottom: 4px;
+    position: relative;   
+}
+
+.underline-hover-effect::before {
+    content: "";
+    position: absolute;
+    left: 0; 
+    /* right: 0; */
+    bottom: 0;
+    width: 0%;
+    height: 4px;
+    background-color: #ececec;
+    transition: 0.25s ease-out
+}
+
+.underline-hover-effect:hover::before {
+    width: 100%;
+    left: auto;
+    /* right: auto; */
+}
+
+/* Image Animation ======================================*/
+
+.img-animation {
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+
+    @keyframes slidein {
+        from{
+            margin-left: 10px;
+        }
+        to{
+            margin-left: 10px;
+        }
+    }
+
+    /* wrapper ======================================= */
+
+    .wrapper_outer {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .wrapper {
+        height: 100vh;
+        overflow: hidden;
+        perspective: 1px;
+    }
+
+    .parallax_section {
+        min-height: 100vh;
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        position: relative;
+        overflow: hidden;
+        transform-style: preserve-3d;
+    }
+
+    .parallax_bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+        min-height: 100%;
+        transform: translate3d(0, 0, -1px) scale(2 );
+    }
+     .parallax_section p{
+        margin: 0;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+     }
+
+     .parallax_section h2{
+        margin: 0;
+        font-size: 50px;
+        text-align: center;
+        text-transform: uppercase;
+     }
+
+     /* image zoom================================= */
+        
+     .container1 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        z-index: 2;
+        margin-left: 120px;
+      }
+
+      .container2 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        z-index: 2;
+        margin-left: 8%;
+      }
+
+      
+     /* Line colleges ========================= */
+
+     

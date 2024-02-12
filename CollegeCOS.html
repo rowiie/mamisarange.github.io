@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>College of Science</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="CO_Science2.gif"/>
+
+    <style>
+      body {
+        /* background-image: linear-gradient(to right, #374254, #adbbc6, #374254); */
+        /* background: rgb(90, 89, 90);
+        background: linear-gradient(
+          37deg,
+          rgba(90, 89, 90, 0.10145308123249297) 0%,
+          rgba(104, 104, 105, 0.23870798319327735) 28%,
+          rgba(110, 110, 111, 0.7625175070028012) 62%,
+          rgba(116, 117, 118, 1) 100%
+        ); */
+
+        background-image: url(presbg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 240vh;
+        background-attachment: fixed;
+        margin: 0;
+        z-index: 1;
+      }
+      h2 {
+        text-align: center;
+        color: white;
+        font-size: 40px;
+        color: #374254;
+      }
+
+      .h1bg {
+        background-color: #2e3bff;
+        color: #ececec;
+        border-radius: 20px;
+        width: 550px;
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 33%;
+        letter-spacing: 1.5px;
+        font-weight: normal;
+        font-size: 48px;
+        margin-top: 5%;
+      }
+
+      /* Image Animation ======================================*/
+
+      .img-animation_2 {
+        animation-duration: 0.3s;
+        animation-name: slidein;
+      }
+
+      @keyframes slidein {
+        from {
+          margin-top: 80px;
+        }
+        to {
+          margin-top: 37px;
+        }
+      }
+
+      /* wrapper ======================================= */
+
+      .img1 {
+        width: 300px;
+        height: 200px;
+        transition: 0.2s linear;
+      }
+
+      .img1:hover {
+        transform: scale(1.2);
+      }
+
+      .flexrow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 0;
+        font-size: 30px;
+        padding: 10px;
+        padding: 0 10px;
+        z-index: 1;
+        left: 40%;
+        bottom: 10px;
+      }
+
+      .afooter {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+      a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        text-shadow: 2px 2px 2px #374254;
+      }
+
+      .img1 {
+        border-radius: 10px;
+        width: 200px;
+        height: 200px;
+        border-style: solid;
+        border-color: #0e1424;
+        border-width: 4px;
+      }
+
+      .p1 {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: normal;
+      }
+
+      /* ====== */
+
+      .img-side-bg {
+        position: absolute;
+        height: 110vh;
+        width: 20%;
+        z-index: -1;
+        left: 5%;
+      }
+
+      .cropped {
+        width: 300px;
+        height: 110vh;
+        object-fit: cover;
+        object-position: 25% 25%;
+      }
+
+      /* =============== */
+
+      .nav-area {
+        position: fixed;
+        float: right;
+        list-style: none;
+        margin-top: 180px;
+        top: -24%;
+        background-color: #2e3bff;
+        padding: 10px 10px 10px 10px;
+        width: 100%;
+      }
+      .nav-area li {
+        display: inline-block;
+        padding: 2px 10px;
+      }
+      .nav-area li a {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 550;
+        text-align: center;
+      }
+      .nav-area li a{
+        background: #2e3bff;
+        border-radius: 5px;
+        color: #ececec;
+        margin: 0px 10px;
+        padding: 8px;
+        font-weight: normal;
+        font-size: 24px;
+        letter-spacing: 1px;
+      }
+
+       /* =========== */
+       .headerURSlogo {
+        position: absolute;
+        display: flex;
+        margin-top: -2%;
+      }
+
+      .urslogo {
+        width: 80px;
+        margin: 20px 10px 20px 20px
+      }
+
+      .logotext {
+        color: #2e3bff;
+        margin-top: 50px;
+        font-size: 25px;
+      }
+
+      /* ============= */
+
+      .MCMT-size {
+        width: 100%;
+        height: 50%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="headerURSlogo"><img class="urslogo" src="urs logo.png"><div><p class="logotext">University of Rizal System</p><p style="margin-top: -20px; margin-left: 80px;">Morong, Rizal</p></div>
+    </p></header>
+    <div>
+      <h2 class="img-animation_2 h1bg">College of Science</h2>
+
+      <div class="flexrow" style="position: relative; top: 90px">
+        <a href="deanCOS.html"
+          ><img class="img1" src="Dr. Jose E. Bunaluyo Jr. dean COS.jpg" />
+          <p class="p1">Dean of the College</p></a
+        >
+        <a href="courselistCOS.html"
+          ><img
+            class="img1"
+            style="margin-left: 150px"
+            src="CO_Education.jpg"
+          />
+          <p class="p1" style="margin-left: 150px">Course list</p></a
+        >
+      </div>
+    </div>
+
+    
+
+    <!-- <footer>
+      <a class="afooter" href="main1.html">Main Page</a>
+      <a class="afooter" href="aboutus.html">About Us</a>
+      <a class="afooter" href="Contact_Us.html">Contact Us</a>
+    </footer> -->
+
+
+     <div
+      style="
+        color: #777;
+        background-color: #ececec;
+        text-align: center;
+        padding: 20px 80px;
+        text-align: justify;
+        margin-top: 25%;
+      "
+    >
+      <h3 style="text-align: center"><b>Morong Campus Management Team</b></h3>
+    </div>
+
+    <img class="MCMT-size" src="MCMT.png">
+
+    <ul class="nav-area">
+      <li><a href="main1.html">Home</a></li>
+      <li><a href="aboutCOS.html">About COS</a></li>
+      <li><a href="COSOrg.html">COS Student Organization</a></li>
+      <li><a href="COSNews.html">COS News and Events</a></li>
+      <li><a href="COSFS.html">COS Faculty and Staff</a></li>
+
+
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="Contact_Us.html">Contact Us</a></li>
+    </ul>
+
+    
+  </body>
+</html>
